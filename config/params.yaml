@@ -1,0 +1,16 @@
+# Controller Parameters
+pure_pursuit:
+  lookahead_distance: 0.8
+  max_linear_velocity: 0.6
+  max_angular_velocity: 1.2
+  goal_tolerance: 0.2
+
+# Path Smoothing
+path_smoother:
+  sampling_distance: 0.1
+  
+# Trajectory Generation  
+trajectory:
+  max_velocity: 0.6
+  max_acceleration: 0.4
+  time_step: 0.1
