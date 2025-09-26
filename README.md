@@ -1,5 +1,3 @@
-# TrajectoryControl
-
 # TurtleBot3 Trajectory Controller
 
 A ROS2 package for autonomous trajectory following using cubic spline path smoothing and pure pursuit control.
@@ -106,11 +104,6 @@ ros2 run trajectory_controller trajectory_generator_node
 ros2 run trajectory_controller pure_pursuit_node
 ```
 
-## Key Parameters
-- `lookahead`: 0.6m (target point distance)
-- `max_lin_vel`: 0.4 m/s
-- `max_ang_vel`: 1.0 rad/s
-- `goal_tolerance`: 0.8m
 
 ## Project Structure
 ```
