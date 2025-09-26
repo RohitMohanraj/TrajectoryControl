@@ -62,32 +62,6 @@ rviz2
    - **Odometry** for `/odom`
    - **TF**
 
-## Troubleshooting
-
-### Robot Not Moving
-```bash
-# Check odometry
-ros2 topic echo /odom
-
-# Verify TF frames
-ros2 run tf2_tools view_frames.py
-
-# Check topics
-ros2 topic list
-ros2 topic echo /cmd_vel
-```
-
-### Build Issues
-```bash
-# Clean build
-rm -rf build install log && colcon build
-source install/setup.bash
-```
-
-### Path Not Visible
-- Verify topics: `ros2 topic echo /waypoints`
-- Check RViz Fixed Frame is set to `odom`
-- Ensure path displays are properly configured
 
 ## Manual Node Execution (Debug)
 ```bash
